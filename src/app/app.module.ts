@@ -16,13 +16,18 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './pages/home/home.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatFormFieldModule,
     FormsModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    NgbModule,
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [
     provideAnimationsAsync()

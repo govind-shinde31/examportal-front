@@ -39,10 +39,5 @@ $exam-front-theme: mat.define-theme((
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.text-center{
-  text-align: center;
-}
-
-.mx-5{
-margin: 0 20px;
-}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

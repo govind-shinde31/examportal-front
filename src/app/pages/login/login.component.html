@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-4 offset-md-4">
+            <mat-card class="py-4">
+                <h5 class="text-center">Login</h5>
+
+                <form>
+                    <!-- Username field -->
+                    <mat-form-field appearance="outline" class="w-100 px-3">
+                        <mat-label>User Name</mat-label>
+                        <input [(ngModel)]="user.username" name="username" matInput placeholder="Enter Here">
+                        <mat-hint>Valid User Name</mat-hint>
+                    </mat-form-field>
+
+                    <!-- Password -->
+                    <mat-form-field appearance="outline" class="w-100 px-3 mt-1">
+                        <mat-label>Password</mat-label>
+                        <input [(ngModel)]="user.password" name="password" matInput placeholder="Enter Here">
+                    </mat-form-field>
+
+                    <div class="container text-center w-100 px-3">
+                        <button mat-flat-button color="accent" type="submit" class="mx-4">Login</button>
+                        <button mat-flat-button>Rest</button>
+                    </div>
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>

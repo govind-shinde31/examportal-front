@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { User } from '../../Models/user.model';
 import { UserService } from '../../services/user.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-signup',
@@ -36,7 +37,9 @@ export class SignupComponent {
       this.userService.addUser(this.user).subscribe((data: any) =>{
         // success
         console.log(data);
-        alert("User added successfully..!!")
+        // alert("User added successfully..!!")
+        Swal.fire("Success", "added successfully..!!", 'success')
+        
       },
       (error)=>{
         // error
