@@ -1,15 +1,15 @@
 <mat-toolbar class="bg-primary text-white">
-    <button mat-icon-button class="example-icon text-white" aria-label="Example icon-button with menu icon">
+    <a routerLink="/" mat-icon-button class="example-icon text-white" aria-label="Example icon-button with menu icon">
         <mat-icon>menu_book</mat-icon>
-    </button>
+    </a>
     <span>Examportal</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon login-icon text-white me-5"
+    <a mat-icon-button routerLink="login" class="example-icon login-icon text-white me-5"
         aria-label="Example icon-button with heart icon">
         Login
-    </button>
-    <button mat-icon-button class="example-icon favorite-icon text-white me-5"
+    </a>
+    <a mat-icon-button routerLink="/signup" class="example-icon favorite-icon text-white me-5"
         aria-label="Example icon-button with heart icon">
         Register
-    </button>
+    </a>
 </mat-toolbar>
